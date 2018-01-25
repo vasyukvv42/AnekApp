@@ -3,5 +3,9 @@
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>res/share.svg</file>
+        <file>res/heart.svg</file>
+        <file>res/osa.png</file>
+        <file>res/akb.png</file>
+        <file>res/mlj.png</file>
     </qresource>
 </RCC>

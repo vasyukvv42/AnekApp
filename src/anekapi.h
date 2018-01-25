@@ -14,7 +14,7 @@ class AnekAPI : public QObject
     Q_OBJECT
     Q_PROPERTY(QString text READ text CONSTANT)
     Q_PROPERTY(QString pub READ pub CONSTANT)
-    Q_PROPERTY(QString likes READ likes CONSTANT)
+    Q_PROPERTY(int likes READ likes CONSTANT)
     Q_PROPERTY(QString hostname READ hostname WRITE setHostname)
     Q_PROPERTY(int port READ port WRITE setPort)
 

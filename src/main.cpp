@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    qmlRegisterType<AndroidUtils>("AndroidUtils", 0, 1, "AndroidUtils");
-    qmlRegisterType<AnekAPI>("AnekAPI", 0, 1, "AnekAPI");
+    qmlRegisterType<AndroidUtils>("AndroidUtils", 1, 0, "AndroidUtils");
+    qmlRegisterType<AnekAPI>("AnekAPI", 1, 0, "AnekAPI");
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
