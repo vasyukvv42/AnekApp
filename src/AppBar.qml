@@ -34,7 +34,7 @@ ToolBar {
         
         BusyIndicator {
             id: busyIndicator
-            Layout.fillHeight: true
+            Layout.preferredHeight: dp(24)
             Material.accent: "#ffffff"
         }
         

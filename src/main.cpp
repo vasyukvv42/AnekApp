@@ -17,10 +17,11 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     ClipboardUtil clipboard(app.clipboard());
-
     engine.rootContext()->setContextProperty("clipboard", &clipboard);
+
     qmlRegisterType<AndroidUtils>("AndroidUtils", 1, 0, "AndroidUtils");
     qmlRegisterType<AnekAPI>("AnekAPI", 1, 0, "AnekAPI");
+
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;

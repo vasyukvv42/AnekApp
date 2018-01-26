@@ -69,7 +69,7 @@ ApplicationWindow {
             id: anekCard
             width: parent.width
             anchors.centerIn: parent.Center
-            Material.elevation: 8
+            Material.elevation: dp(2)
         }
     }
 
