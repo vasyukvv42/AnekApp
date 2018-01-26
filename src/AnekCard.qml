@@ -24,7 +24,7 @@ Pane {
             PropertyChanges {
                 target: sourceButton
                 icon.source: "res/akb.png"
-                onClicked: openUrlExternally("https://vk.com/baneks")
+                onClicked: Qt.openUrlExternally("https://vk.com/baneks")
             }
         },
         State {
@@ -32,7 +32,7 @@ Pane {
             PropertyChanges {
                 target: sourceButton
                 icon.source: "res/osa.png"
-                onClicked: openUrlExternally("https://vk.com/hilarious_stuff")
+                onClicked: Qt.openUrlExternally("https://vk.com/hilarious_stuff")
             }
         }
 
