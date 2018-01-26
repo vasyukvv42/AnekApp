@@ -7,5 +7,8 @@
         <file>res/osa.png</file>
         <file>res/akb.png</file>
         <file>res/mlj.png</file>
+        <file>AnekCard.qml</file>
+        <file>AppBar.qml</file>
+        <file>res/copy.svg</file>
     </qresource>
 </RCC>

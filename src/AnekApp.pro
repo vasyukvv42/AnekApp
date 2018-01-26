@@ -14,7 +14,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    anekapi.cpp
+    anekapi.cpp \
+    clipboardutil.cpp
 
 RESOURCES += qml.qrc
 
@@ -32,7 +33,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 include("androidutils/androidutils.pri")
 
 HEADERS += \
-    anekapi.h
+    anekapi.h \
+    clipboardutil.h
 
 DISTFILES += \
     android/AndroidManifest.xml \
