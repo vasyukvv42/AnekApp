@@ -8,7 +8,10 @@ Icons used are from the [Google's Material icon set](https://github.com/google/m
 ## Screenshots
 
 Desktop:
+
 ![Desktop Screenshot](screenshot_desktop.png)
 
+
 Android:
+
 ![Android Screenshot](screenshot_android.png)
