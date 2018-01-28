@@ -41,11 +41,12 @@ Pane {
     ColumnLayout {
         id: anekCardLayout
         anchors.fill: parent
+        anchors.margins: dp(2)
+        spacing: dp(2)
         
         Label {
             id: anekLabel
             Layout.fillWidth: true
-            Layout.bottomMargin: dp(2)
             font.pointSize: 16
             renderType: Text.NativeRendering
             wrapMode: Text.WordWrap
@@ -72,7 +73,6 @@ Pane {
             
             ToolButton {
                 id: sourceButton
-                Layout.fillHeight: true
                 icon.color: "transparent"
                 icon.height: dp(30)
                 icon.width: dp(30)
@@ -95,7 +95,6 @@ Pane {
             
             ToolButton {
                 id: heartIcon
-                Layout.fillHeight: true
                 background: null
                 icon.source: "res/heart.svg"
                 icon.color: "#9e9e9e"

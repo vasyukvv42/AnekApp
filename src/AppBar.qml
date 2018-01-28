@@ -27,7 +27,7 @@ ToolBar {
             renderType: Text.NativeRendering
             font.pointSize: 18
             text: "AnekApp"
-            font.bold: true
+            font.weight: Font.Medium
             verticalAlignment: Text.AlignVCenter
             Layout.fillHeight: true
         }

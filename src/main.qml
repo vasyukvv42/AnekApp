@@ -12,11 +12,14 @@ ApplicationWindow {
     width: 800
     height: 600
     title: "AnekApp"
-    flags: Qt.Window | Qt.MaximizeUsingFullscreenGeometryHint
+    flags: Qt.Window
+
+    property double dpToPixelRatio: (Qt.platform.os == "android")
+                                    ? Screen.pixelDensity * 2.54 / 16
+                                    : 1
 
     function dp(size) {
-        var ratio = Screen.pixelDensity * 2.54 / 16
-        return (ratio > 1) ? ratio * size : size
+        return size * dpToPixelRatio
     }
 
     AndroidUtils {
